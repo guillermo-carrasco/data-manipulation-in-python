@@ -6,16 +6,10 @@ Contents of the webminar "Data Manipulation In Python" given for [QueensAI](http
 If you don't want to install all packages and dependencies required to run the exercises in this
 webminar, I have created a Docker image that you can pull and run. Do the following:
 
-1. Clone this repository and navigate into it. This step is important since some files in the repository are mounted into
-the image
-
-        git clone https://github.com/guillermo-carrasco/data-manipulation-in-python.git
-        cd data-manipulation-in-python
-
-2. Pull the docker image and run it:
+1. Pull the docker image and run it:
 
         docker pull gcarrasco/ml:data-manipulation-in-python
-        docker run -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/notebooks gcarrasco/ml:data-manipulation-in-python
+        docker run -p 8888:8888 gcarrasco/ml:data-manipulation-in-python
 
     _NOTE: If in Windows, replace `$(pwd)` with `%cd%` for Windows Command Line, or with `${PWD}` for PowerShell_
 
